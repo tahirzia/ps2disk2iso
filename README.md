@@ -17,7 +17,7 @@ Make sure to mark file as executable first. To see help type
 
 # Example
 ```shell
-./rip_ps2_disc.sh --if /dev/disk2 --of ~/Desktop --bs 6m
+./rip_ps2_disc.sh --if /dev/disk2 --of ~/Desktop/nfs.iso --bs 6m
 ```
 It will ask for a confirmation. Type "yes" completely to confirm to start the process. Wait about 20-30 minutes depending upon the size of game and copy speed, it will take a while.
 
