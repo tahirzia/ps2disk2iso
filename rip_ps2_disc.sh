@@ -51,7 +51,9 @@ VOLUME_NAME=$(diskutil info "$DISK" | grep "Volume Name" | awk -F': ' '{print $2
 # Check if volume name was found
 if [ -z "$VOLUME_NAME" ]; then
   echo "Error: Could not determine the volume name of $DISK."
-  exit 1
+  #exit 1
+  VOLUME_NAME="UNTITLED"
+  echo "Setting Volume Name static $VOLUME_NAME"
 fi
 
 # Update OUTPUT_FILE if not explicitly provided and include volume name
